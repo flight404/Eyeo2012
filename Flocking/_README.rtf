@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww26580\viewh19520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs52 \cf0 Flocking
+\b0\fs34 \
+\
+
+\b Description:
+\b0 \
+This is a rework of the Flocking tutorial I created for Cinder (google "Cinder Flocking Tutorial" because I am too lazy to provide the link and I am in an internet cafe with no internet\'85 go figure). This version pushes all the logic to the GPU allowing me to get away with 3 to 4x the number of particles from the original version.\
+\
+
+\b Trivia:
+\b0 \
+Prey love the glowing lights. Predators hate the glowing lights. Oh, and because I want to make things challenging, if a Predator actually succeeds in catching a Prey, the simulation will probably crash or some other odd thing will happen. Hopefully it is impossible. At least I think it is impossible. But if stuff starts acting weird, that would be the first thing I would check.\
+\
+
+\b Key/Mouse Commands:
+\b0 \
+\pard\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Left click and drag	Drag camera around the simulation space\
+Spacebar	Toggle power (Turns over head light on or off. When light is off, glowing orbs will appear.)\
+L	Add new glowing orb (remember, they are invisible when overhead light is on)\
+Mouse wheel or scroll gesture	Adjust the speed that time passes in the room. Kinda goes to crap when the time is dropped to zero.\
+\
+
+\b Disclaimers:\
+
+\b0 This was my second project which pushed physics calculations to the GPU. It is possible this only works on ATI cards. I just don't know because I didn't test it on anything but my MacBook Pro. It 
+\i should
+\i0  be stable but since these GPU code bits are awkward to debug, I can't really vouch for the stability of this code. I 
+\i think
+\i0  it is fine. I really do.
+\b \
+
+\b0 \
+Read the disclaimer in the Room project. It applies here as well.}

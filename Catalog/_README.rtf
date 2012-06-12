@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww26580\viewh19520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs52 \cf0 Catalog
+\b0\fs34 \
+\
+
+\b Description:
+\b0 \
+This project was influenced by my intense childhood desire to own a telescope. I never succeeded in getting my father to buy me one. We lived too close to city lights for it to be worth it. So I had to be content with star guide books. The black star on white sky aesthetic really had an impact on me. The other reason I created this project was to be able to see what our sun might look like from planets orbiting other stars.\
+\
+
+\b Trivia:
+\b0 \
+I used the HYG database available at http://astronexus.com/node/34. It has 116,166 of the closest and brightest stars to our sun.\
+\
+If the star is a named star, I draw it as a billboarded quad. If the star is not named, I draw it as a GL_POINT. Since the GL_POINT alphas are turned down really low, they barely show up. So if the view doesn't quite look like 116,166 stars, it is because most of them exist as dim points which get lost against the Milky Way background.\
+\
+At Eyeo, I showed a modified version of this project which featured a camera pan down to the surface of an exoplanet. Trust me, removing that functionality is doing us all a favor. It was some of the ugliest code I have ever written. It was shoved into the code base with such brutality, I am surprised the whole thing didn't break while I was presenting.\
+\
+
+\b Key/Mouse Commands:
+\b0 \
+\pard\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Left click and drag	Drag camera around the simulation space (not very useful in this project since the camera position is \
+	determined by which star is selected as the home star and which is selected as the destination star)\
+Left click and release	Select a star to look at, if under cursor\
+Right click and release	Select a star to be the home star, if under cursor\
+Spacebar	Toggle power (Toggles between star-guide look and night-sky look)\
+1	Look at Sirius from our Sun\
+2	Look at Vega from our Sun\
+3	Look at Gliese 581 from our Sun\
+4	Look at our Sun from Gliese 581\
+N	Toggles the render of text labels\
+B	Toggles the render of 'bright stars'\
+F	Toggles the render of 'faint stars'\
+Mouse wheel or scroll gesture	Adjust the speed that time passes in the room\
+\
+
+\b Disclaimers:\
+
+\b0 This project looked much better when I was using the DIN Bold font. But since I shouldn't be distributing fonts that cost money, I swapped it out with Arial. Boring Arial.\
+ 
+\b \
+
+\b0 I recall making some tiny tweaks to the data base being provided with this project. I don't recall what I changed exactly so if you plan on doing something more serious with this code, I would recommend grabbing the original database from the URL listed in the Trivia section.\
+\
+I can't figure out why the text label for 'Gliese 581' won't show. Curious. Definitely my fault but I couldn't find the source of the problem.\
+\
+Some of the stars are really really really far outside the main mass of stars. If you happen to right click on one of them, you are in for a ride out into the middle of nowhere.\
+\
+Read the disclaimer in the Room project. It applies here as well.}
